@@ -1,52 +1,82 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .menucontainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background-image: url("./assets/img/abstract-rainbow-6296890_1920.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./assets/img/abstract-rainbow-6296890_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  gap: 2rem;
   }
-  
-  h2 {
-    color: black;
-    font-size: 68px;
-  }
-  
-  h3 {
-    color: black;
-    font-size: 42px;
-  }
-  
-  li {
-    font-size: 32px;
-    color: black;
-    line-height: 1.5;
-    overflow: auto;
-  
-    border-bottom: 1px dotted #ccc;
-  }
-  
-  .price {
-    font-weight: bold;
-    margin-left: 1em;
-  }
-  
-  ul {
-    gap: 24px;
-  }
-  
-  .menulist {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
+
+h2 {
+  color: black;
+  font-size: 68px;
+}
+
+h3 {
+  color: black;
+  font-size: 42px;
+}
+
+li {
+  font-size: 32px;
+  color: black;
+  line-height: 1.5;
+  overflow: auto;
+
+  border-bottom: 1px dotted #ccc;
+}
+
+.price {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+ul {
+  gap: 24px;
+}
+
+.menulist {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-img {
+  height: 230px;
+  width: auto;
+}
+
+.salmon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-direction: row;
+}
+
+
+tr {
+  padding-top: 16px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+td {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.row{
+  flex-direction: row-reverse;
+}

@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+p {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
 .menucontainer {
   display: flex;
   justify-content: center;
@@ -14,12 +22,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  gap: 2rem;
-  }
+}
 
 h2 {
   color: black;
   font-size: 68px;
+  margin-top: 8px;
 }
 
 h3 {
@@ -66,7 +74,6 @@ ul {
 
 
 tr {
-  padding-top: 16px;
   width: 300px;
   display: flex;
   justify-content: space-between;
@@ -77,6 +84,6 @@ td {
   font-weight: 400;
 }
 
-.row{
+.row {
   flex-direction: row-reverse;
 }

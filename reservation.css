@@ -1,0 +1,88 @@
+.menucontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.reservationform {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.reserveimg {
+    width: 550px;
+    height: auto;
+    border-radius: 24px;
+}
+
+.resform {
+    display: flex;
+    width: 400px;
+    height: auto;
+}
+
+.check {
+    display: flex;
+    gap: 16px;
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-direction: column;
+    width: 400px;
+}
+
+label {
+    color: white;
+}
+
+.input {
+    width: 400px;
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.custombox {
+    background-color: transparent;
+}
+
+.tablepref {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+select {
+    background-color: transparent;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+option{
+    color: black;
+}
+
+button {
+    background-color: transparent;
+    padding: 8px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reservation.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/img/sushi-4683661_640.png"
+    />
+  </head>
+  <body>
+    <div class="menucontainer">
+      <header>
+        <div class="headerlogotext">
+          <img
+            class="navlogo"
+            src="./assets/img/sushi-4683661_640.png"
+            alt=""
+          />
+          <p>SUSHI-TOWN</p>
+        </div>
+        <navbar>
+          <a href="./menu.html">Menu</a>
+          <a href="">Reservation</a>
+          <a href="">Location</a>
+        </navbar>
+      </header>
+
+      <section class="reservationform">
+        <div>
+          <img class="reserveimg" src="./assets/img/reservation.jpg" alt="" />
+        </div>
+        <div class="resform">
+          <form action="/reserve" method="post">
+            <div class="check">
+              <div>
+                <input type="checkbox" id="frau" name="anrede" value="frau" />
+                <label for="frau">Mrs.</label>
+              </div>
+              <div>
+                <input type="checkbox" id="mann" name="anrede" value="mann" />
+                <label for="mann">Mr.</label>
+              </div>
+            </div>
+
+            <div>
+              <label for="vorname"></label>
+              <input
+                class="input"
+                placeholder="First Name"
+                type="text"
+                id="vorname"
+                name="vorname"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="name"></label>
+              <input
+                class="input"
+                placeholder="Surname:"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="reservierungsdatum"></label>
+              <input
+                class="input"
+                type="date"
+                id="reservierungsdatum"
+                name="reservierungsdatum"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="reservierungszeit"></label>
+              <input
+                class="input"
+                type="time"
+                id="reservierungszeit"
+                name="reservierungszeit"
+                required
+              />
+            </div>
+
+            <div>
+              <label>Number of persons:</label><br />
+              <input type="radio" id="anzahl_1" name="anzahl" value="1" />
+              <label for="anzahl_1">1 Person</label><br />
+
+              <input type="radio" id="anzahl_2" name="anzahl" value="2" />
+              <label for="anzahl_2">2 Persons</label><br />
+
+              <input type="radio" id="anzahl_3" name="anzahl" value="3" />
+              <label for="anzahl_3">3 Persons</label><br />
+
+              <input type="radio" id="anzahl_4" name="anzahl" value="4" />
+              <label for="anzahl_4">4 Persons</label>
+            </div>
+
+            <div class="tablepref">
+              <label for="tischpraeferenz">Table Preference:</label>
+              <select id="tischpraeferenz" name="tischpraeferenz">
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+                <option value="any">Any</option>
+              </select>
+            </div>
+
+            <button type="submit">Reserve</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="logo-text">
+          <img class="navlogo" src="./assets/img/sushi-4683661_640.png" />
+          <p>SUSHI-TOWN</p>
+        </div>
+
+        <div class="social">
+          <img class="social-logo" src="./assets/img/tripadvisor_logo.png" />
+          <img class="social-logo" src="./assets/img//facebook_logo.png" />
+          <img class="social-logo" src="./assets/img/instagrram_logo.png" />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

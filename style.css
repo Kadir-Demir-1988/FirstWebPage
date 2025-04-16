@@ -114,3 +114,7 @@ footer {
   align-items: center;
   gap: 1rem;
 }
+
+.underline {
+  text-decoration: underline;
+}

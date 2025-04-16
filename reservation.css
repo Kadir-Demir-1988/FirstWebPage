@@ -91,6 +91,13 @@ button {
     border-radius: 8px;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }

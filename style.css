@@ -54,7 +54,7 @@ p {
   width: 50px;
 }
 
-navbar {
+nav {
   display: flex;
   justify-content: space-between;
 }

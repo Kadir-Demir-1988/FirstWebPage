@@ -11,7 +11,6 @@ html {
 
 body {
   background-color: #1f1f1f;
-
 }
 
 main {
@@ -85,8 +84,6 @@ h1 {
   transition: 0.5s;
 }
 
-
-
 h1:hover {
   -webkit-text-stroke: 2px white;
   color: transparent;
@@ -102,7 +99,7 @@ footer {
   margin-bottom: 2rem;
 }
 
-.social-logo{
+.social-logo {
   height: 40px;
   width: 40px;
   margin-right: 20px;

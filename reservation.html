@@ -10,7 +10,6 @@
       rel="shortcut icon"
       type="image/x-icon"
       href="./assets/img/sushi-4683661_640.png"
-      alt="navlogo"
     />
   </head>
   <body>
@@ -20,30 +19,35 @@
           <img
             class="navlogo"
             src="./assets/img/sushi-4683661_640.png"
-            alt=""
+            alt="headlogo"
           />
           <a href="./index.html">SUSHI-TOWN</a>
         </div>
-        <navbar>
+        <nav>
           <a href="./menu.html">Menu</a>
           <a class="underline" href="">Reservation</a>
-          <a href="">Location</a>
-        </navbar>
+          <a href="./location.html">Location</a>
+          <a href="./gallery.html">Gallery</a>
+        </nav>
       </header>
 
       <section class="reservationform">
         <div>
-          <img class="reserveimg" src="./assets/img/reservation.jpg" alt="" />
+          <img
+            class="reserveimg"
+            src="./assets/img/reservation.jpg"
+            alt="reserve"
+          />
         </div>
         <div class="resform">
           <form action="/reserve" method="post">
             <div class="check">
               <div>
-                <input type="checkbox" id="frau" name="anrede" value="frau" />
+                <input type="radio" id="frau" name="anrede" value="frau" />
                 <label for="frau">Mrs.</label>
               </div>
               <div>
-                <input type="checkbox" id="mann" name="anrede" value="mann" />
+                <input type="radio" id="mann" name="anrede" value="mann" />
                 <label for="mann">Mr.</label>
               </div>
             </div>
@@ -51,6 +55,8 @@
             <div>
               <label for="vorname"></label>
               <input
+                pattern="[A-Za-z]+"
+                title="Please enter letters only"
                 class="input"
                 placeholder="First Name"
                 type="text"
@@ -63,11 +69,25 @@
             <div>
               <label for="name"></label>
               <input
+                pattern="[A-Za-z]+"
+                title="Please enter letters only"
                 class="input"
                 placeholder="Surname:"
                 type="text"
                 id="name"
                 name="name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="phone"></label>
+              <input
+                class="input"
+                placeholder="Phone:"
+                type="number"
+                id="phone"
+                name="phone"
                 required
               />
             </div>
@@ -125,14 +145,30 @@
 
       <footer>
         <div class="logo-text">
-          <img class="navlogo" src="./assets/img/sushi-4683661_640.png" alt="navlogo" />
+          <img
+            class="navlogo"
+            src="./assets/img/sushi-4683661_640.png"
+            alt="navlogo"
+          />
           <p>SUSHI-TOWN</p>
         </div>
 
         <div class="social">
-          <img class="social-logo" src="./assets/img/tripadvisor_logo.png" alt="sociallogo"/>
-          <img class="social-logo" src="./assets/img//facebook_logo.png" alt="sociallogo"/>
-          <img class="social-logo" src="./assets/img/instagrram_logo.png" alt="sociallogo"/>
+          <img
+            class="social-logo"
+            src="./assets/img/tripadvisor_logo.png"
+            alt="sociallogo"
+          />
+          <img
+            class="social-logo"
+            src="./assets/img//facebook_logo.png"
+            alt="sociallogo"
+          />
+          <img
+            class="social-logo"
+            src="./assets/img/instagrram_logo.png"
+            alt="sociallogo"
+          />
         </div>
       </footer>
     </div>
